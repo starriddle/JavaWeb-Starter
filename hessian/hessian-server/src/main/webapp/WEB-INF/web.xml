@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
                 http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
-    <display-name>demo-hessian-server</display-name>
+    <display-name>hessian-server</display-name>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.htm</welcome-file>
@@ -21,7 +21,7 @@
         <!-- 配置接口的具体实现类 -->
         <init-param>
             <param-name>service-class</param-name>
-            <param-value>com.cyl.demo.hessian.server.service.impl.UserServiceImpl</param-value>
+            <param-value>com.starriddle.starter.javaweb.hessian.server.service.impl.UserServiceImpl</param-value>
         </init-param>
     </servlet>
     <!-- 映射 user servlet 的URL地址 -->
@@ -39,14 +39,14 @@
             <!-- service-class 也可以写为 home-class -->
             <param-name>home-class</param-name>
             <!-- 服务器对接口的实现，供客户端调用 -->
-            <param-value>com.cyl.demo.hessian.server.service.impl.FileServiceImpl</param-value>
+            <param-value>com.starriddle.starter.javaweb.hessian.server.service.impl.FileServiceImpl</param-value>
         </init-param>
         <!-- 提供给客户端调用的接口，这里的home-api配置不是必须的，可以不配置 -->
         <init-param>
             <!-- home-api 也可以写为api-class -->
             <param-name>home-api</param-name>
             <!-- 接口 -->
-            <param-value>com.cyl.demo.hessian.api.service.FileService</param-value>
+            <param-value>com.starriddle.starter.javaweb.hessian.api.service.FileService</param-value>
         </init-param>
     </servlet>
     <!-- 映射 file servlet 的URL地址 -->
@@ -62,7 +62,7 @@
         <!-- 配置接口的具体实现类 -->
         <init-param>
             <param-name>service-class</param-name>
-            <param-value>com.cyl.demo.hessian.server.service.impl.SchoolServiceImpl</param-value>
+            <param-value>com.starriddle.starter.javaweb.hessian.server.service.impl.SchoolServiceImpl</param-value>
         </init-param>
     </servlet>
     <!-- 映射 school servlet 的URL地址 -->

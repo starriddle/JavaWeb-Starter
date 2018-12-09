@@ -2,17 +2,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.cyl.demo.hessian</groupId>
-        <artifactId>hessian</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
-
+    <groupId>com.starriddle.starter.javaweb.hessian</groupId>
     <artifactId>hessian-server</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Demo::Hessian::Server</name>
-    <description>Demo of Hessian Server</description>
+    <name>Hessian::Server</name>
+    <description>Hessian Server</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -21,7 +24,7 @@
             <version>4.0.38</version>
         </dependency>
         <dependency>
-            <groupId>com.cyl.demo.hessian</groupId>
+            <groupId>com.starriddle.starter.javaweb.hessian</groupId>
             <artifactId>hessian-api</artifactId>
             <version>${project.version}</version>
         </dependency>

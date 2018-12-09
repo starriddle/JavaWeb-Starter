@@ -9,3 +9,7 @@
 - 20181201 分离 framework 模块
 
     分离 framework 模块，独立成项
+
+- 20181209 迁移 hessian 模块
+
+    分离 framework 模块，至 javaweb 分支，以便迁移至 JavaWeb-Starter 项目
